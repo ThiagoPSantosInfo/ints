@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InTS Fotovideo</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./imagens/home/logo_fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -15,15 +16,16 @@
 <body>
     <header><!--Cabeçalho------------------------------------------->
         <div class="central nav">
-            <img src="./imagens/home/logo.png" alt="logo_ints" title="Logo InTS">
+            <a href="index.html"><img src="./imagens/home/logo.png" alt="logo_ints" title="Logo InTS"></a>
             <nav>
-                <a href="">HOME</a>
-                <a href="">TRABALHOS</a>
-                <a href="">SOBRE</a>
-                <a href="">CONTATO</a>
+                <a href="index.html">HOME</a>
+                <a href="trabalhos.html">TRABALHOS</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="contato.html">CONTATO</a>
             </nav>
         </div>
     </header>
+
     <section class="banner"><!--Banner------------------------------------------->
 
         <div class="slides">
@@ -36,134 +38,150 @@
 
             <!--imagens-->
             <div class="slide first">
-                <img src="./imagens/home/banner1.jpg" alt="Imagem 1" title="Imagem 1">
+                <img src="./imagens/home/banner1.jpg" alt="Imagem 1" title="Michele e seu esposo">
             </div>
             <div class="slide">
-                <img src="./imagens/home/banner2.jpg" alt="Imagem 2" title="Imagem 2">
+                <img src="./imagens/home/banner2.jpg" alt="Imagem 2" title="Thomas e sua mãe">
             </div>
             <div class="slide">
-                <img src="./imagens/home/banner3.jpg" alt="Imagem 3" title="Imagem 3">
+                <img src="./imagens/home/banner3.jpg" alt="Imagem 3" title="Sophia e seus pais">
             </div>
             <div class="slide">
-                <img src="./imagens/home/banner4.jpg" alt="Imagem 4" title="Imagem 4">
+                <img src="./imagens/home/banner4.jpg" alt="Imagem 4" title="Beatriz e amigas">
             </div>
             <!--Fim imagens-->
-
-            <!--Navegação-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-            <!--Fim Navegação-->
         </div>
+            <!--navegação-->
         <div class="manual-navigation">
             <label for="radio1" class="manual-btn"></label>
             <label for="radio2" class="manual-btn"></label>
             <label for="radio3" class="manual-btn"></label>
             <label for="radio4" class="manual-btn"></label>
         </div>
-
+            <!--Fim navegação-->
     </section>
+
     <section class="central trabalhos"><!--Trabalhos------------------------------------------->
         <h2>trabalhos</h2>
         <div class="cont-trabalhos">
             <figure>
-                <img src="./imagens/home/trabalhos.jpg" alt="">
-                <figcaption>casamento civil | michele e jonas</figcaption>
+                <a href="./ensaios/michele.html"><img src="./imagens/home/michele.jpg" alt=""></a>
+                <figcaption>casamento civil | michele e jean</figcaption>
             </figure>
             <figure>
-                <img src="./imagens/home/trabalhos.jpg" alt="">
-                <figcaption>casamento civil | michele e jonas</figcaption>
+                <a href="./ensaios/thomas.html"><img src="./imagens/trabalhos/thomaz.jpg" alt=""></a>
+                <figcaption>batizado | thomas</figcaption>
             </figure>
             <figure>
-                <img src="./imagens/home/trabalhos.jpg" alt="">
-                <figcaption>casamento civil | michele e jonas</figcaption>
+                <a href="./ensaios/sophia.html"><img src="./imagens/home/sophia.jpg" alt=""></a>
+                <figcaption>aniversário | sophia</figcaption>
             </figure>
         </div>
         <div class="cont-trabalhos">
             <figure>
-                <img src="./imagens/home/trabalhos.jpg" alt="">
-                <figcaption>casamento civil | michele e jonas</figcaption>
+                <a href="./ensaios/lary_e_marc.html"><img src="./imagens/home/laryssa.jpeg" alt=""></a>
+                <figcaption>chá revelação | laryssa e marcos</figcaption>
             </figure>
             <figure>
-                <img src="./imagens/home/trabalhos.jpg" alt="">
-                <figcaption>casamento civil | michele e jonas</figcaption>
+                <a href="./ensaios/parto_lary.html"><img src="./imagens/home/parto_lary.jpg" alt=""></a>
+                <figcaption>parto | laryssa</figcaption>
             </figure>
             <figure>
-                <img src="./imagens/home/trabalhos.jpg" alt="">
-                <figcaption>casamento civil | michele e jonas</figcaption>
+                <a href="./ensaios/mel.html"><img src="./imagens/home/mel.jpeg" alt=""></a>
+                <figcaption>aniversário 15 anos | mel</figcaption>
             </figure>
         </div>
-        <a href="">veja mais</a>
+        <a href="trabalhos.html" class="botao">veja mais</a>
     </section>
+
     <section class="dizem"><!--Sessão Dizem------------------------------------------->
         <h2>o que eles dizem</h2>
-        <div class="cont-dizem">
-            <div class="cont-diz">
-                <!--Botóes-->
-                <input type="radio" name="dizem-btn" id="dizem1">
-                <input type="radio" name="dizem-btn" id="dizem2">
-                <input type="radio" name="dizem-btn" id="dizem3">
-                <input type="radio" name="dizem-btn" id="dizem4">
-                <!--Fim Botóes-->
+        <div class="slidr">
+            <div class="slids">
+                <input type="radio" name="rdio-btn" id="rdio1">
+                <input type="radio" name="rdio-btn" id="rdio2">
+                <input type="radio" name="rdio-btn" id="rdio3">
+                <input type="radio" name="rdio-btn" id="rdio4">
 
-                <!--Textos-->
-                <div class="slide-dizem firs">
-                    <h3>michele e jonas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam minus optio, cum nam
-                        molestias molestiae cupiditate praesentium asperiores earum officiis mollitia, voluptatum
-                        adipisci, ab incidunt beatae distinctio odio iste. Maiores veritatis consequuntur numquam, harum
-                        fugiat ut asperiores inventore reprehenderit rerum nisi saepe iure unde tempora repudiandae
-                        ducimus magnam enim omnis aliquid, cumque officia, soluta temporibus tenetur veniam. Quas
-                        architecto facilis aliquid perferendis libero maiores, aliquam totam ea error commodi eligendi
-                        dicta incidunt, eveniet explicabo et consectetur sapiente nobis magni!</p>
+                <div class="slid frst">
+                    <h3>Sandy e Jozenias</h3>
+                    <p>A opinião de todos que viram é unânime: as fotos ficaram incríveis! Retratam uma sensibilidade
+                        extraordinária e superaram muito minhas expectativas. Amei cada detalhe. Eu, pessoalmente, já me
+                        emocionei várias vezes, ficou além do que imaginávamos.</p>
                 </div>
-                <div class="slide-dizem">
-                    <h3>michele e jonas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam minus optio, cum nam
-                        molestias molestiae cupiditate praesentium asperiores earum officiis mollitia, voluptatum
-                        adipisci, ab incidunt beatae distinctio odio iste. Maiores veritatis consequuntur numquam, harum
-                        fugiat ut asperiores inventore reprehenderit rerum nisi saepe iure unde tempora repudiandae
-                        ducimus magnam enim omnis aliquid, cumque officia, soluta temporibus tenetur veniam. Quas
-                        architecto facilis aliquid perferendis libero maiores, aliquam totam ea error commodi eligendi
-                        dicta incidunt, eveniet explicabo et consectetur sapiente nobis magni!</p>
+                <div class="slid">
+                    <h3>Beatriz</h3>
+                    <p>Tô simplesmente sem palavras pra essas fotos! E ainda com essa rapidez... ficou tudo perfeito, eu
+                        amei demais! Minha irmã já falou que quer você como fotógrafo na festa de 15 anos dela, kkkkk.
+                        Sério, amei muito o seu trabalho!</p>
                 </div>
-                <div class="slide-dizem">
-                    <h3>michele e jonas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam minus optio, cum nam
-                        molestias molestiae cupiditate praesentium asperiores earum officiis mollitia, voluptatum
-                        adipisci, ab incidunt beatae distinctio odio iste. Maiores veritatis consequuntur numquam, harum
-                        fugiat ut asperiores inventore reprehenderit rerum nisi saepe iure unde tempora repudiandae
-                        ducimus magnam enim omnis aliquid, cumque officia, soluta temporibus tenetur veniam. Quas
-                        architecto facilis aliquid perferendis libero maiores, aliquam totam ea error commodi eligendi
-                        dicta incidunt, eveniet explicabo et consectetur sapiente nobis magni!</p>
+                <div class="slid">
+                    <h3>Quérem e Mateus</h3>
+                    <p>Eu amei demais, as fotos ficaram simplesmente perfeitas! Cada detalhe vai ficar marcado para
+                        sempre. Com certeza vou indicar para muita gente. Vocês são extremamente atenciosos,
+                        comunicativos e oferecem um atendimento acolhedor e simpático. As fotos ficaram um verdadeiro
+                        arraso!</p>
                 </div>
-                <div class="slide-dizem">
-                    <h3>michele e jonas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam minus optio, cum nam
-                        molestias molestiae cupiditate praesentium asperiores earum officiis mollitia, voluptatum
-                        adipisci, ab incidunt beatae distinctio odio iste. Maiores veritatis consequuntur numquam, harum
-                        fugiat ut asperiores inventore reprehenderit rerum nisi saepe iure unde tempora repudiandae
-                        ducimus magnam enim omnis aliquid, cumque officia, soluta temporibus tenetur veniam. Quas
-                        architecto facilis aliquid perferendis libero maiores, aliquam totam ea error commodi eligendi
-                        dicta incidunt, eveniet explicabo et consectetur sapiente nobis magni!</p>
+                <div class="slid">
+                    <h3>Maria e Filipe</h3>
+                    <p>Meu Deus, que fotos são essas? Você consegue transmitir amor em cada clique. Ao ver as imagens,
+                        todos sentimos como se estivéssemos vivendo aquele momento novamente. De coração, muito obrigada
+                        pelos registros e por estar presente conosco. Estamos simplesmente encantados e desejamos que
+                        você continue sempre assim, com esse olhar cheio de amor.</p>
                 </div>
-                <!--Fim Textos-->
             </div>
-            <!--Navegação-->
-            <div class="navigat">
-                <div class="btn1"></div>
-                <div class="btn2"></div>
-                <div class="btn3"></div>
-                <div class="btn4"></div>
+            <div class="manual-navigat">
+                <label for="rdio1" class="manual-betn"></label>
+                <label for="rdio2" class="manual-betn"></label>
+                <label for="rdio3" class="manual-betn"></label>
+                <label for="rdio4" class="manual-betn"></label>
             </div>
-            <!--Fim Navegação-->
         </div>
     </section>
 
+    <section class="thisam"><!--ThiSam------------------------------------------->
+        <div class="central cont-thisam">
+            <div class="ts-texto">
+                <div class="thiago">
+                    <h3>olá, sou thiago santos</h3>
+                    <p>Sou um fotógrafo apaixonado por registrar momentos únicos e transformá-los em memórias
+                        inesquecíveis. Para mim, estar presente em histórias tão especiais é um privilégio, e cada
+                        clique carrega não apenas técnica, mas também emoção e cuidado. Sinto-me honrado em participar
+                        da vida das pessoas e poder compartilhar esse olhar através do seu trabalho é o que torna minha
+                        arte ainda mais significativa.</p>
+                </div>
+                <div class="samara">
+                    <h3>olá, sou samara santos</h3>
+                    <p>Sou Samara, amo viagens e registrar momentos que contam histórias únicas.
+                        Ter a empresa InTS é unir trabalho e prazer em cada projeto realizado.
+                        Amo ver os resultados ganhando vida e poder oferecer isso aos nossos clientes.
+                        Desde nova, cultivo a paixão pela fotografia como forma de eternizar memórias.
+                        Meu desejo é seguir me aperfeiçoando e dedicando-me ainda mais a esse mundo mágico.</p>
+                </div>
+            </div>
+            <div class="ts-img">
+                <img src="./imagens/home/thiago1.jpg" alt="" title="Thiago">
+                <img class="none" src="./imagens/home/thiago2.jpg" alt="">
+                <img src="./imagens/home/samara1.jpg" alt="" title="Samara">
+                <img class="none" src="./imagens/home/samara2.jpg" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape"><!--Rodapé------------------------------------------->
+        <img src="./imagens/home/logo_b.png" alt="">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="trabalhos.html">TRABALHOS</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
+        <p>Site by Thiago Santos</p>
+    </footer>
+
     <script src="script.js"></script>
+    
 </body>
 
 </html>

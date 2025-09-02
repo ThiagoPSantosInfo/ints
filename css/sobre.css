@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.central{
+    width: 70%;
+    margin: auto;
+}
+
+/*Cabeçalho---------------------------------------------------------*/
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.nav img{
+    width: 130px;
+    margin: 5px 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav a{
+    padding-left: 10px;
+    color: #000000;
+}
+
+.nav a:hover{
+    color: #838383;
+}
+
+/*banner---------------------------------------------------------*/
+
+.banner{
+    width: 100%;
+}
+
+.cont-banner{
+    width: 100%;
+    height: 400px;
+    background-image: url('../imagens/sobre/thiago_e_samara.jpg');
+    background-size: cover; 
+    
+}
+
+.cont-banner h1{
+    text-align: center;
+    padding-top: 200px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 52px;
+}
+
+/*Conteúdo---------------------------------------------------------*/
+.conteudo{
+    padding-bottom: 100px;
+}
+.conteudo h1{
+    margin: 100px 0 30px 0;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.conteudo p{
+    margin: 30px 0;
+    font-weight: 200;
+}
+
+.conteudo h2{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #d3d3d3;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.conteudo span{
+    font-weight: bold;
+}
+
+/*Rodapé---------------------------------------------------------*/
+.rodape{
+    width: 100%;
+    height: 300px;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+.rodape img{
+    width: 150px;
+    margin: 20px 0;
+}
+
+.rodape a{
+    color: #fff;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.rodape a:hover{
+    color: #838383;
+}
+
+.rodape p{
+    padding-top: 100px;
+    color: #fff;
+}
+
+/*Responsividade----------------------------*/
+
+/*Celulares*/
+
+@media (max-width: 430px) {
+        
+    h2{
+        font-size: 22px;
+        padding: 50px 0 30px 0;
+    }
+
+    .central{
+        width: 95%;
+        margin: auto;
+    }
+
+   .nav img{
+        width: 90px;
+    }
+
+    .nav a{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .cont-banner {
+        width: 100vw;
+        height: 300px;
+        background-position: center;
+       
+    }
+    
+    .cont-banner h1{
+        font-size: 22px;
+        padding-top: 170px;
+       
+    }
+    
+    .conteudo h1{
+        font-size: 22px;
+    }
+
+    .rodape a {
+    padding: 10px;
+}
+
+}
+
+/*Tablets*/
+
+@media (min-width: 431px) and (max-width: 768px){
+
+    h2{
+        font-size: 28px;
+        padding: 50px 0 30px 0;
+    }
+
+    .central{
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav img{
+        width: 90px;
+    }
+
+    .nav a{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .cont-banner {
+        width: 100vw;
+        height: 300px;
+        background-position: center;
+       
+    }
+    
+    .cont-banner h1{
+        font-size: 22px;
+        padding-top: 170px;
+       
+    }
+    
+    .conteudo h1{
+        font-size: 22px;
+        margin: 30px 0 30px 0;
+    }
+
+}
+
+/*Telas médias*/
+
+@media (min-width: 769px) and (max-width: 850px){
+    h2{
+        font-size: 28px;
+        padding: 50px 0 30px 0;
+    }
+
+    .central{
+        width: 90%;
+        margin: auto;
+    }
+
+   .nav img{
+        width: 90px;
+    }
+
+    .nav a{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .cont-banner {
+        width: 100vw;
+        height: 300px;
+        background-position: center;
+       
+    }
+    
+    .cont-banner h1{
+        font-size: 22px;
+        padding-top: 170px;
+       
+    }
+
+    .conteudo h1{
+        font-size: 22px;
+        margin: 30px 0 30px 0;
+    }
+
+}
+
+/*Telas maiores*/
+
+@media (min-width: 851px) and (max-width: 1024px){
+    h2{
+        font-size: 28px;
+        padding: 50px 0 30px 0;
+    }
+
+    .central{
+        width: 90%;
+        margin: auto;
+    }
+
+   .nav img{
+        width: 90px;
+    }
+
+    .nav a{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .cont-banner {
+        width: 100vw;
+        height: 300px;
+        background-position: center;
+       
+    }
+    
+    .cont-banner h1{
+        font-size: 22px;
+        padding-top: 170px;
+       
+    }
+
+    .conteudo h1{
+        font-size: 22px;
+        margin: 30px 0 30px 0;
+    }
+}

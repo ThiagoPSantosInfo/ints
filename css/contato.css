@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.central {
+    width: 70%;
+    margin: auto;
+}
+
+/*Cabeçalho---------------------------------------------------------*/
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.nav img {
+    width: 130px;
+    margin: 5px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    padding-left: 10px;
+    color: #000000;
+}
+
+.nav a:hover {
+    color: #838383;
+}
+
+/*banner---------------------------------------------------------*/
+
+.banner {
+    width: 100%;
+}
+
+.cont-banner {
+    width: 100%;
+    height: 400px;
+    background-image: url('../imagens/contato/thisam.jpg');
+    background-size: cover;
+
+}
+
+.cont-banner h1 {
+    text-align: center;
+    padding-top: 200px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 52px;
+}
+
+/*Formulário---------------------------------------------------------*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.form-container {
+    background: #ffffff;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #4f4f4f;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #949494;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #4a5568;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d2d6dc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+button {
+    width: 100%;
+    background-color: #3b3b3b;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    position: relative;
+}
+
+button:hover:not(:disabled) {
+    background-color: #797979;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.loading {
+    display: none;
+}
+
+.loading.show {
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.message.success {
+    background-color: #f0fff4;
+    color: #38a169;
+    border: 1px solid #9ae6b4;
+}
+
+.message.error {
+    background-color: #fed7d7;
+    color: #e53e3e;
+    border: 1px solid #feb2b2;
+}
+
+/*Redes---------------------------------------------------------*/
+
+.redes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes a {
+    background-color: #3b3b3b;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 100px;
+    border-radius: 6px;
+}
+
+.redes a:hover {
+    background-color: #797979;
+    transform: translateY(-1px);
+}
+
+/*Rodapé---------------------------------------------------------*/
+
+.rodape {
+    width: 100%;
+    height: 300px;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape img {
+    width: 150px;
+    margin: 20px 0;
+}
+
+.rodape a {
+    color: #fff;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.rodape a:hover {
+    color: #838383;
+}
+
+.rodape p {
+    padding-top: 100px;
+    color: #fff;
+}
+
+/*Responsividade----------------------------*/
+
+/*Celulares*/
+
+@media (max-width: 430px) {
+
+    .central {
+        width: 95%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .banner {
+        padding-top: 70px;
+    }
+
+    .cont-banner {
+        width: 100vw;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .cont-banner h1 {
+        font-size: 22px;
+        padding-top: 90px;
+
+    }
+
+    .rodape a {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+}
+
+/*Tablets*/
+
+@media (min-width: 431px) and (max-width: 768px) {
+    .central {
+        width: 95%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .banner {
+        padding-top: 70px;
+    }
+
+    .cont-banner {
+        width: 100vw;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .cont-banner h1 {
+        font-size: 22px;
+        padding-top: 130px;
+
+    }
+}
+
+/*Telas médias*/
+
+@media (min-width: 769px) and (max-width: 850px) {
+    .central {
+        width: 95%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .banner {
+        padding-top: 70px;
+    }
+
+    .cont-banner {
+        width: 100vw;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .cont-banner h1 {
+        font-size: 22px;
+        padding-top: 130px;
+
+    }
+}
+
+/*Telas maiores*/
+
+@media (min-width: 851px) and (max-width: 1024px) {
+    .central {
+        width: 95%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .banner {
+        padding-top: 70px;
+    }
+
+    .cont-banner {
+        width: 100vw;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .cont-banner h1 {
+        font-size: 22px;
+        padding-top: 130px;
+
+    }
+}

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,11 @@
     font-family: "Roboto", sans-serif;
 }
 
-h2{
+body {
+    overflow-x: hidden;
+}
+
+h2 {
     font-size: 42px;
     text-transform: uppercase;
     text-align: center;
@@ -15,7 +19,7 @@ h2{
     letter-spacing: 5px;
 }
 
-h3{
+h3 {
     font-size: 28px;
     text-transform: uppercase;
     text-align: center;
@@ -23,83 +27,87 @@ h3{
     font-weight: 300;
     letter-spacing: 5px;
 }
-.central{
+
+.central {
     width: 70%;
     margin: auto;
 }
 
 /*Cabeçalho---------------------------------------------------------*/
-header{
+header {
     width: 100%;
     position: fixed;
     background-color: #fff;
     z-index: 1;
 }
 
-.nav img{
+.nav img {
     width: 130px;
     margin: 5px 0;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-nav{
+.nav {
     display: flex;
     align-items: center;
 }
 
-nav a{
+.nav a {
     padding-left: 10px;
     color: #000000;
 }
 
-nav a:hover{
+.nav a:hover {
     color: #838383;
 }
 
 /*Banner---------------------------------------------------------*/
 
-.banner{
-    width: 100%;
-    height: 100vh;
+.banner {
+    width: 100vw;
+
     overflow: hidden;
+    position: relative;
+
 }
 
-.slides{
-    width: 100%;
-    height: 100vh;
+.slides {
+    width: 400%;
+
     display: flex;
+    position: relative;
 }
 
-.slides input{
+.slides input {
     display: none;
 }
 
-.slide{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+.slide {
+    width: 25%;
+
     transition: 2s;
-    
+
 }
 
-.slide img{
-   width: 100vw;
+.slide img {
+    width: 100%;
 }
 
-.manual-navigation{
+.manual-navigation {
     position: absolute;
     width: 100%;
     margin-top: -60px;
     display: flex;
     justify-content: center;
+    bottom: 40px;
 }
 
-.manual-btn{
+.manual-btn {
     border: 2px solid #a5a5a5;
     padding: 5px;
     border-radius: 10px;
@@ -107,69 +115,75 @@ nav a:hover{
     transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 12px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
     background-color: #a5a5a5;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first{
-    margin-left: -100%;
-}
-#radio3:checked ~ .first{
-    margin-left: -200%;
+#radio2:checked~.first {
+    margin-left: -25%;
 }
 
-#radio4:checked ~ .first{
-    margin-left: -300%;
+#radio3:checked~.first {
+    margin-left: -50%;
 }
 
-.navigation-auto div{
-    border:2px solid #a5a5a5;
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid #a5a5a5;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
 }
 
-.navigation-auto{
+.navigation-auto {
     position: absolute;
     width: 100%;
-    margin-top: 671px;
+    bottom: 40px;
     display: flex;
     justify-content: center;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
     margin-right: 12px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked~.navigation-auto .auto-btn1 {
     background-color: #5b5b5b;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
+
+#radio2:checked~.navigation-auto .auto-btn2 {
     background-color: #5b5b5b;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3{
+
+#radio3:checked~.navigation-auto .auto-btn3 {
     background-color: #5b5b5b;
 }
-#radio4:checked ~ .navigation-auto .auto-btn4{
+
+#radio4:checked~.navigation-auto .auto-btn4 {
     background-color: #5b5b5b;
 }
 
 /*Trabalhos---------------------------------------------------------*/
-.trabalhos{
+.trabalhos {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
 }
 
-.trabalhos a{
+.botao {
     margin: auto;
     padding: 15px 60px;
     font-size: 12px;
@@ -178,43 +192,444 @@ nav a:hover{
     border: 1px solid #000000;
 }
 
-.trabalhos a:hover{
+.botao:hover {
     background-color: #f5f5f5;
 }
 
-.cont-trabalhos{
+.cont-trabalhos {
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
 }
 
-.cont-trabalhos figure img{
-    width: 350px;
+.trabalhos figure {
+    width: 30%;
 }
 
-.cont-trabalhos figure figcaption{
-    padding: 20px 0;
+.cont-trabalhos figure img {
+    width: 100%;
+}
+
+.cont-trabalhos figure figcaption {
+    padding: 20px;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     letter-spacing: 3px;
 }
 
 /*Sessão Dizem---------------------------------------------------------*/
 
-.dizem{
-    width: 100%;
+.dizem {
+    width: 100vw;
 }
 
-.cont-dizem{
-    width: 50%;
+.slidr {
     margin: auto;
+    width: 650px;
+    height: 310px;
+    overflow: hidden;
+    position: relative;
 }
 
-.cont-diz{
+.slids {
+    width: 400%;
+    height: 310px;
     display: flex;
 }
 
-.slide-dizem{
+.slids input {
+    display: none;
+}
+
+.slid {
+    width: 25%;
+    padding-bottom: 15px;
+}
+
+.slid p {
+
+    text-align: center;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.manual-navigat {
+    position: absolute;
     width: 100%;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-betn {
+    border: 2px solid #a5a5a5;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-betn:not(:last-child) {
+    margin-right: 12px;
+}
+
+.manual-betn:hover {
+    background-color: #a5a5a5;
+}
+
+#rdio1:checked~.frst {
+    margin-left: 0;
+}
+
+#rdio2:checked~.frst {
+    margin-left: -25%;
+}
+
+#rdio3:checked~.frst {
+    margin-left: -50%;
+}
+
+#rdio4:checked~.frst {
+    margin-left: -75%;
+}
+
+/*ThiSam---------------------------------------------------------*/
+
+.thisam {
+    width: 100%;
+}
+
+.cont-thisam {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.ts-texto {
+    width: 50%;
+
+}
+
+.ts-texto p {
+    width: 85%;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.thiago {
+    margin-bottom: 60px;
+}
+
+.ts-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px;
+
+}
+
+.ts-img img {
+    width: 270px;
+}
+
+/*Rodapé---------------------------------------------------------*/
+
+.rodape {
+    width: 100%;
+    height: 300px;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape img {
+    width: 150px;
+    margin: 20px 0;
+}
+
+.rodape a {
+    color: #fff;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.rodape a:hover {
+    color: #838383;
+}
+
+.rodape p {
+    padding-top: 100px;
+    color: #fff;
+}
+
+/*Responsividade----------------------------*/
+
+/*Celulares*/
+
+@media (max-width: 430px) {
+    h2 {
+        font-size: 22px;
+        padding: 50px 0 30px 0;
+    }
+
+    h3 {
+        font-size: 16px;
+        padding: 20px 0;
+    }
+
+    .central {
+        width: 95%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .banner {
+        padding-top: 60px;
+    }
+
+    .cont-trabalhos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trabalhos figure {
+        width: 100%;
+    }
+
+    .cont-trabalhos figure img {
+        width: 100%;
+    }
+
+    .cont-trabalhos figure figcaption {
+        font-size: 18px;
+        padding: 5px 0 30px 0;
+    }
+
+    .slidr {
+        width: 300px;
+    }
+
+    .slid p {
+        font-size: 14px;
+    }
+
+    .cont-thisam {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ts-texto {
+        width: 100%;
+
+    }
+
+    .ts-texto p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ts-img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .ts-img img {
+        width: 49%;
+    }
+
+    .rodape a {
+        padding: 10px;
+    }
+
+}
+
+/*Tablets*/
+
+@media (min-width: 431px) and (max-width: 768px) {
+
+    h2 {
+        font-size: 28px;
+        padding: 50px 0 30px 0;
+    }
+
+    h3 {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+
+    .central {
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .cont-trabalhos figure img {
+        width: 200px;
+    }
+
+    .cont-trabalhos figure figcaption {
+        font-size: 14px;
+        padding: 5px 0 30px 0;
+    }
+
+    .manual-navigat {
+        margin-top: -130px;
+    }
+
+    .thisam {
+        margin-bottom: 30px;
+    }
+
+    .ts-texto {
+        width: 60%;
+
+    }
+
+    .none {
+        display: none;
+    }
+
+}
+
+/*Telas médias*/
+
+@media (min-width: 769px) and (max-width: 850px) {
+    h2 {
+        font-size: 28px;
+        padding: 50px 0 30px 0;
+    }
+
+    h3 {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+
+    .central {
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .cont-trabalhos figure img {
+        width: 220px;
+    }
+
+    .cont-trabalhos figure figcaption {
+        font-size: 14px;
+        padding: 5px 0 30px 0;
+    }
+
+    .manual-navigat {
+        margin-top: -130px;
+    }
+
+    .thisam {
+        margin-bottom: 30px;
+    }
+
+    .ts-texto {
+        width: 60%;
+
+    }
+
+    .none {
+        display: none;
+    }
+
+}
+
+/*Telas maiores*/
+
+@media (min-width: 851px) and (max-width: 1024px) {
+    h2 {
+        font-size: 28px;
+        padding: 50px 0 30px 0;
+    }
+
+    h3 {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+
+    .central {
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .cont-trabalhos figure img {
+        width: 280px;
+    }
+
+    .cont-trabalhos figure figcaption {
+        font-size: 14px;
+        padding: 5px 0 30px 0;
+    }
+
+    .manual-navigat {
+        margin-top: -130px;
+    }
+
+    .thisam {
+        margin-bottom: 30px;
+    }
+
+    .ts-texto {
+        width: 60%;
+
+    }
+
+    .none {
+        display: none;
+    }
+
+}
+
+/*Telas superiores*/
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .none {
+        display: none;
+    }
+
 }

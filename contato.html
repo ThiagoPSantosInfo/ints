@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/contato.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./imagens/home/logo_fav.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <header><!--Cabeçalho------------------------------------------->
+    <div class="central nav">
+      <a href="index.html"><img src="./imagens/home/logo.png" alt="logo_ints" title="Logo InTS"></a>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="trabalhos.html">TRABALHOS</a>
+        <a href="sobre.html">SOBRE</a>
+        <a href="contato.html">CONTATO</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner"><!--Banner------------------------------------------->
+    <div class="cont-banner">
+      <h1>contato</h1>
+    </div>
+  </section>
+
+  <div class="container"><!--Formulário------------------------------------------->
+    <div class="form-container">
+      <h1>Cadastre-se</h1>
+      <p class="subtitle">Preencha os dados abaixo para receber nossas novidades</p>
+      <form id="leadForm">
+        <div class="input-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="input-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999" required>
+        </div>
+        <button type="submit" id="submitBtn">
+          <span id="buttonText">Cadastrar</span>
+          <span id="loading" class="loading hidden">Enviando...</span>
+        </button>
+      </form>
+      <div id="message" class="message hidden"></div>
+    </div>
+  </div>
+
+  <section class="redes"><!--Redes------------------------------------------->
+    <a href="https://wa.me/5585987435441">Whatsapp</a>
+    <a href="https://www.instagram.com/insightsphotomaker?igsh=MXNlenppeXc0eGtibA%3D%3D&utm_source=qr">Instagram</a>
+  </section>
+
+  <footer class="rodape"><!--Rodapé------------------------------------------->
+    <img src="./imagens/home/logo_b.png" alt="">
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="trabalhos.html">TRABALHOS</a>
+      <a href="sobre.html">SOBRE</a>
+      <a href="contato.html">CONTATO</a>
+    </nav>
+    <p>Site by Thiago Santos</p>
+  </footer>
+
+  <script src="app.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.central {
+    width: 70%;
+    margin: auto;
+}
+
+/*Cabeçalho---------------------------------------------------------*/
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.nav img {
+    width: 130px;
+    margin: 5px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    padding-left: 10px;
+    color: #000000;
+}
+
+.nav a:hover {
+    color: #838383;
+}
+
+/*conteudo---------------------------------------------------------*/
+
+.conteudo h1 {
+    padding: 150px 0 100px 0;
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+.conteudo p {
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+
+/*Galeria---------------------------------------------------------*/
+.galeria {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 350px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 15px #777777;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: #383838e9;
+}
+
+#modal img {
+    width: 35%;
+}
+
+.btnfechar {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 3;
+}
+
+.btnfechar img {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/*Rodapé---------------------------------------------------------*/
+
+.rodape {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape img {
+    width: 150px;
+    margin: 20px 0;
+}
+
+.rodape a {
+    color: #fff;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.rodape a:hover {
+    color: #838383;
+}
+
+.rodape p {
+    padding-top: 100px;
+    color: #fff;
+}
+
+/*Responsividade----------------------------*/
+
+/*Celulares*/
+
+@media (max-width: 430px) {
+
+    .central {
+        width: 95%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .conteudo h1 {
+        font-size: 22px;
+        padding: 100px 0 50px 0;
+    }
+
+    #modal img {
+        width: 90%;
+    }
+
+    .rodape a {
+        padding: 10px;
+    }
+
+}
+
+/*Tablets*/
+
+@media (min-width: 431px) and (max-width: 768px) {
+    .central {
+        width: 95%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .conteudo h1 {
+        font-size: 22px;
+        padding: 100px 0 50px 0;
+    }
+
+    #modal img {
+        width: 80%;
+    }
+}
+
+/*Telas médias*/
+
+@media (min-width: 769px) and (max-width: 850px) {
+    .central {
+        width: 95%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .conteudo h1 {
+        font-size: 22px;
+        padding: 100px 0 50px 0;
+    }
+
+    #modal img {
+        width: 80%;
+    }
+}
+
+/*Telas maiores*/
+
+@media (min-width: 851px) and (max-width: 1024px) {
+    .central {
+        width: 95%;
+        margin: auto;
+    }
+
+    .nav img {
+        width: 90px;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .conteudo h1 {
+        font-size: 22px;
+        padding: 100px 0 50px 0;
+    }
+}
